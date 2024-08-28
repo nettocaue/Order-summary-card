@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--Pale-blue: #E0E8FF;
+--Bright-blue: #3829E0; 
+--VeryPale-blue: #F5F7FF;
+--Desaturated-blue: #7280A7;
+--Dark-blue: #1F2F56;
+--white: #FFFFFF;
+--primary-font: "Red Hat Display";
+}
+
+body {
+  background-color: var(--Pale-blue);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1;
+  grid-template-rows: 1fr; 
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 450px;
+  width: 100%;
+  gap: 0;
+}
+
+main img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.container {
+  background-color: var(--VeryPale-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+ }
+
+.text {
+  text-align: center;
+}
+
+ .plans {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 15px;
+  border-radius: 16px;
+  background-color: var(--Pale-blue);
+ }
+
+ .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+ }
+
+ .button_payment {
+  background-color: var(--Bright-blue);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 16px;
+ }
+
+ .button_cancel {
+  background-color: var(--VeryPale-blue);
+  padding: 20px;
+ }
